@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./MATMSDK/libs/EcrProtocol_V1.01.00_20190115.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MATMSDK/libs/EcrProtocol_V1.01.00_20190115.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/colorWhite"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/tabLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AEPS"
+                    android:background="#CC6B04"
+                    android:visibility="visible"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/card_padding"
+                    android:typeface="monospace"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/aepsTabOption"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:visibility="visible"
+                    android:background="#CC0404"
+                    android:id="@+id/aepsTabline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AEPS"
+                    android:background="#CC6B04"
+                    android:visibility="visible"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/card_padding"
+                    android:typeface="monospace"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/aepsTabOption2"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:visibility="visible"
+                    android:background="#CC0404"
+                    android:id="@+id/aepsTabline2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_padding"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/cashWithdrawalButton"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_padding"
+                    android:background="?android:windowBackground"
+                    android:drawableLeft="@drawable/money"
+                    android:elevation="6dp"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/home_padding"
+                    android:text="Cash Withdrawl"
+                    android:typeface="monospace" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/cashWithdrawalExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:el_duration="1000"
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_padding"
+                        android:layout_marginRight="@dimen/card_padding"
+                        android:padding="@dimen/card_padding">
+
+                        <RadioGroup
+                            android:id="@+id/select_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/aadhar_no_rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Aadhar Number"/>
+                            <RadioButton
+                                android:id="@+id/aadhar_uid_rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_marginLeft="10dp"
+                                android:text="Virtual Id"/>
+
+                        </RadioGroup>
+                        <LinearLayout
+                            android:id="@+id/number_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/select_type"
+                            android:orientation="vertical">
+
+                            <com.matm.matmsdk.aepsmodule.maskedittext.MaskedEditText
+                                android:id="@+id/withdrawalAadharNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/red_button_bg"
+                                android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+                                android:hint=" Enter Aadhar No."
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:padding="8dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/details_text_size"
+                                android:typeface="monospace"
+                                android:visibility="visible"
+                                mask:allowed_chars="1234567890"
+                                mask:char_representation="#"
+                                mask:mask="####-####-####" />
+                            <com.matm.matmsdk.aepsmodule.maskedittext.MaskedEditText
+                                android:id="@+id/withdrawalAadharUID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_button_bg"
+                                android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+                                android:hint=" Enter Aadhar Virtual Id."
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:padding="8dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/details_text_size"
+                                android:typeface="monospace"
+                                android:visibility="gone"
+                                android:layout_marginTop="10dp"
+                                mask:allowed_chars="1234567890"
+                                mask:char_representation="#"
+                                mask:mask="####-####-####-####" />
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/withdrawalMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/number_lay"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/red_button_bg"
+                            android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+                            android:hint=" Enter Mobile No."
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:padding="8dp"
+                            android:textSize="@dimen/details_text_size"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/withdrawalBankspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/withdrawalMobileNumber"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/red_button_bg"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint=" Select Bank"
+                            android:padding="8dp"
+                            android:textSize="@dimen/details_text_size"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/withdrawalAmountEnter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/withdrawalBankspinner"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/red_button_bg"
+                            android:drawableLeft="@drawable/money"
+                            android:hint=" Enter Amount"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textSize="@dimen/details_text_size"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/withdrawalFingerprint"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/withdrawalAmountEnter"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/buttonSolidColor"
+                            android:src="@drawable/ic_fingerprint_black_24dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/fingerprintStrengthWithdrawal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/withdrawalFingerprint"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:text="Fingerprint Strength"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.moos.library.HorizontalProgressView
+                            android:id="@+id/withdrawalBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            app:track_width="18dp"
+                            app:progressTextVisibility="true"
+                            app:progressTextColor="@color/black"
+                            app:corner_radius="18dp"
+                            app:isTracked="true"
+                            app:trackColor="#f4f4f4"
+                            android:layout_below="@id/fingerprintStrengthWithdrawal"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/withdrawalBar"
+                            android:layout_marginTop="05dp"
+                            android:id="@+id/withdrawalNote"
+                            android:padding="@dimen/card_padding"
+                            android:text="Note : Recommended Fingerprint Strenght is 70%"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"/>
+                        <Button
+                            android:id="@+id/withdrawalSubmitButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/withdrawalNote"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rect_bg"
+                            android:enabled="true"
+                            android:text="Submit"
+                            android:textColor="#ffffff"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+                    <!--<TextView
+                    android:id="@+id/firstquestiontextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dip"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    />-->
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+                <TextView
+                    android:id="@+id/balanceEnquiryExpandButton"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_padding"
+                    android:background="?android:windowBackground"
+                    android:drawableLeft="@drawable/ic_speaker_black_24dp"
+                    android:elevation="6dp"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/home_padding"
+                    android:text="Balance Enquiry"
+                    android:typeface="monospace" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/balanceEnquiryExpandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:el_duration="1000"
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_padding"
+                        android:layout_marginRight="@dimen/card_padding"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/card_padding">
+                        <RadioGroup
+                            android:id="@+id/bl_select_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/bl_aadhar_no_rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Aadhar Number"/>
+                            <RadioButton
+                                android:id="@+id/bl_aadhar_uid_rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_marginLeft="10dp"
+                                android:text="Virtual Id"/>
+
+                        </RadioGroup>
+                        <LinearLayout
+                            android:id="@+id/bl_number_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bl_select_type"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <com.matm.matmsdk.aepsmodule.maskedittext.MaskedEditText
+                                android:id="@+id/balanceAadharNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_button_bg"
+                                android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+                                android:hint=" Enter Aadhar No."
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:padding="8dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/details_text_size"
+                                android:typeface="monospace"
+                                android:visibility="visible"
+                                mask:allowed_chars="1234567890"
+                                mask:char_representation="#"
+                                mask:mask="####-####-####" />
+
+                            <com.matm.matmsdk.aepsmodule.maskedittext.MaskedEditText
+                                android:id="@+id/balanceAadharVID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_button_bg"
+                                android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+                                android:hint=" Enter Aadhar Virtual Id."
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:padding="8dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/details_text_size"
+                                android:typeface="monospace"
+                                android:visibility="gone"
+                                mask:allowed_chars="1234567890"
+                                mask:char_representation="#"
+                                mask:mask="####-####-####-####" />
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/balanceMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bl_number_lay"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/red_button_bg"
+                            android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+                            android:hint=" Enter Mobile No."
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:padding="8dp"
+                            android:textSize="@dimen/details_text_size"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/balanceBankspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/balanceMobileNumber"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/red_button_bg"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint=" Select Bank"
+                            android:padding="8dp"
+                            android:textSize="@dimen/details_text_size"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/balanceFingerprint"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/balanceBankspinner"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/buttonSolidColor"
+                            android:src="@drawable/ic_fingerprint_black_24dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/fingerprintStrengthBalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/balanceFingerprint"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:text="Fingerprint Strength"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.moos.library.HorizontalProgressView
+                            android:id="@+id/balanceEnqureyBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            app:track_width="18dp"
+                            app:progressTextVisibility="true"
+                            app:progressTextColor="@color/black"
+                            app:corner_radius="18dp"
+                            app:isTracked="true"
+                            app:trackColor="#f4f4f4"
+                            android:layout_below="@id/fingerprintStrengthBalance"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/balanceEnqureyBar"
+                            android:layout_marginTop="05dp"
+                            android:id="@+id/balanceNote"
+                            android:padding="@dimen/card_padding"
+                            android:text="Note : Recommended Fingerprint Strenght is 70%"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"/>
+                        <Button
+                            android:id="@+id/balanceSubmitButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/balanceNote"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rect_bg"
+                            android:enabled="true"
+                            android:text="Submit"
+                            android:textColor="#ffffff"
+                            android:typeface="monospace"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,581 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pax.pax_sdk_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:8:5-68
+13-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:8:22-65
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:9:5-79
+14-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:10:5-81
+15-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.hardware.usb.host" />
+16-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:14:5-65
+16-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:14:22-62
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+17-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+18-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-77
+19    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+19-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-78
+19-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-75
+20    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+20-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-18:47
+20-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-68
+21    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+21-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-74
+21-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-71
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-65
+22-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:22-62
+23    <uses-permission android:name="android.hardware.camera" />
+23-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:5-63
+23-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:22-60
+24    <uses-permission android:name="android.hardware.camera.autofocus" />
+24-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:5-73
+24-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:22-70
+25    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+25-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-74
+25-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-71
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:5-76
+26-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:22-73
+27
+28    <uses-feature
+28-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:5-36:35
+29        android:name="android.hardware.usb.host"
+29-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:9-49
+30        android:required="true" />
+30-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-32
+31
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f693d3eb1042760dd1e095afe0a0c65f\jetified-firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:24:5-68
+32-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f693d3eb1042760dd1e095afe0a0c65f\jetified-firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:24:22-65
+33    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:26:5-110
+33-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:26:22-107
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:5-82
+34-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:22-79
+35
+36    <application
+36-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:19:5-61:19
+37        android:allowBackup="true"
+37-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:20:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.1.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\3f381a8d6616967ca52a9e5946021e4b\core-1.1.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:21:9-43
+41        android:label="@string/app_name"
+41-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:22:9-41
+42        android:networkSecurityConfig="@xml/network_security_config"
+42-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:23:9-69
+43        android:requestLegacyExternalStorage="true"
+43-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:24:9-52
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:25:9-54
+45        android:supportsRtl="true"
+45-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:26:9-35
+46        android:testOnly="true"
+47        android:theme="@style/AppTheme" >
+47-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:27:9-40
+48
+49        <!-- android:theme="@style/AppTheme" -->
+50        <activity android:name="com.pax.pax_sdk_app.DriverActivity" />
+50-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:29:9-61
+50-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:29:19-49
+51        <activity
+51-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:30:9-32:55
+52            android:name="com.pax.pax_sdk_app.UPIMainActivity"
+52-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:31:13-44
+53            android:theme="@style/AppThemematerial" />
+53-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:32:13-52
+54        <activity
+54-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:33:9-42:20
+55            android:name="com.pax.pax_sdk_app.MainActivity"
+55-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:34:13-41
+56            android:configChanges="orientation|keyboardHidden"
+56-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:35:13-63
+57            android:screenOrientation="fullSensor" >
+57-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:36:13-51
+58            <intent-filter>
+58-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:37:13-41:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:38:17-69
+59-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:38:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:40:17-77
+61-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:40:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <receiver android:name="com.pax.pax_sdk_app.PlugInControlReceiver" >
+65-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:44:9-53:20
+65-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:44:19-75
+66            <intent-filter>
+66-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:45:13-51:29
+67
+68                <!--
+69                  <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+70                  <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+71                -->
+72                <action android:name="android.hardware.usb.action.USB_STATE" />
+72-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:48:17-80
+72-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:48:25-77
+73                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+73-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:49:17-90
+73-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:49:25-87
+74                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+74-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:50:17-90
+74-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:50:25-87
+75            </intent-filter>
+76        </receiver>
+77
+78        <service
+78-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:54:9-60:19
+79            android:name="com.matm.matmsdk.notification.service.MyFirebaseMessagingService"
+79-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:55:13-92
+80            android:exported="false" >
+80-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:56:13-37
+81            <intent-filter>
+81-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:57:13-59:29
+82                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+82-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:58:17-78
+82-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:58:25-75
+83            </intent-filter>
+84        </service>
+85
+86        <activity android:name="com.matm.matmsdk.aepsmodule.aeps3.AEPS3_Transaction_Status_Activity" />
+86-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-104
+86-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:19-101
+87        <activity android:name="com.matm.matmsdk.aepsmodule.aeps3.AEPS3_TransactionReceipt_ministatement" />
+87-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:9-109
+87-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:19-106
+88        <activity android:name="com.matm.matmsdk.aepsmodule.aeps3.AEPS3sdkActivity" />
+88-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:9-87
+88-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:19-84
+89        <activity android:name="com.matm.matmsdk.dmtModule.bankList.DMTBankNameActivity" />
+89-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-92
+89-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:19-89
+90        <activity android:name="com.matm.matmsdk.dmtModule.TransferFragment" />
+90-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:9-80
+90-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:19-77
+91        <activity android:name="com.matm.matmsdk.dmtModule.CreatePDFActivity" />
+91-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:9-81
+91-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:19-78
+92        <activity android:name="com.matm.matmsdk.aepsmodule.LocationActivity" /> <!-- <activity android:name="com.matm.matmsdk.Bluetooth.BluetoothConnectorActivity" /> -->
+92-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:9-81
+92-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:19-78
+93        <uses-library
+93-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:9-52:40
+94            android:name="org.apache.http.legacy"
+94-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-50
+95            android:required="false" />
+95-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-37
+96
+97        <service
+97-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:9-61:19
+98            android:name="com.google.firebase.components.ComponentDiscoveryService"
+98-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:18-89
+99            android:directBootAware="true"
+99-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:38:13-37
+101            <meta-data
+101-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-57:85
+102                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+102-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:17-96
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:17-82
+104            <meta-data
+104-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-60:85
+105                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+105-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:17-111
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:39:13-41:85
+108                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+108-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:40:17-119
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:41:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f693d3eb1042760dd1e095afe0a0c65f\jetified-firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:28:13-30:85
+111                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+111-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f693d3eb1042760dd1e095afe0a0c65f\jetified-firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:29:17-139
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f693d3eb1042760dd1e095afe0a0c65f\jetified-firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:30:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\11001c6f69fcc90744fe6cc140d77d14\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+114                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+114-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\11001c6f69fcc90744fe6cc140d77d14\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\11001c6f69fcc90744fe6cc140d77d14\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\9e69635284d7d197960a7d37935e58c4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+117                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+117-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\9e69635284d7d197960a7d37935e58c4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\9e69635284d7d197960a7d37935e58c4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+119        </service>
+120
+121        <activity android:name="com.matm.matmsdk.Dashboard.DashBoardActivity" />
+121-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:9-81
+121-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:19-78
+122        <activity
+122-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:9-66:52
+123            android:name="com.matm.matmsdk.aepsmodule.transactionstatus.TransactionStatusNewActivity"
+123-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-102
+124            android:screenOrientation="portrait" />
+124-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-49
+125        <activity
+125-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-69:52
+126            android:name="com.matm.matmsdk.aepsmodule.AEPSHomeActivity"
+126-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-72
+127            android:screenOrientation="portrait" />
+127-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-49
+128        <activity
+128-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:9-72:52
+129            android:name="com.matm.matmsdk.aepsmodule.CoreAEPSHomeActivity"
+129-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:13-76
+130            android:screenOrientation="portrait" />
+130-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-49
+131        <activity android:name="com.matm.matmsdk.DemoActivity" />
+131-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:9-66
+131-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:19-63
+132        <activity android:name="com.matm.matmsdk.aepsmodule.AEPS2HomeActivity" />
+132-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:9-82
+132-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:19-79
+133        <activity android:name="com.matm.matmsdk.aepsmodule.BioAuthActivity" />
+133-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:9-80
+133-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:19-77
+134        <activity
+134-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:9-80:63
+135            android:name="com.matm.matmsdk.Dashboard.MainActivity"
+135-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:13-67
+136            android:screenOrientation="portrait"
+136-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-49
+137            android:theme="@style/AppTheme"
+137-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:13-44
+138            android:windowSoftInputMode="stateAlwaysHidden" />
+138-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:13-60
+139        <activity
+139-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:9-85:63
+140            android:name="com.matm.matmsdk.Bluetooth.BluetoothActivity"
+140-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-72
+141            android:screenOrientation="portrait"
+141-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:13-49
+142            android:theme="@style/BaseTheme"
+142-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-45
+143            android:windowSoftInputMode="stateAlwaysHidden" />
+143-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:13-60
+144        <activity
+144-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:9-89:63
+145            android:name="com.matm.matmsdk.ChooseCard.ChooseCardActivity"
+145-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-74
+146            android:screenOrientation="portrait"
+146-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:13-49
+147            android:windowSoftInputMode="stateAlwaysHidden" />
+147-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:13-60
+148        <activity
+148-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:9-93:63
+149            android:name="com.matm.matmsdk.Dashboard.FileDownLoadActivity"
+149-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:13-75
+150            android:screenOrientation="portrait"
+150-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:13-49
+151            android:windowSoftInputMode="stateAlwaysHidden" />
+151-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:13-60
+152        <activity
+152-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:94:9-97:63
+153            android:name="com.matm.matmsdk.UserProfile.UserProfileActivity"
+153-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:95:13-76
+154            android:screenOrientation="portrait"
+154-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:96:13-49
+155            android:windowSoftInputMode="stateAlwaysHidden" />
+155-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:97:13-60
+156        <activity
+156-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:98:9-100:52
+157            android:name="com.matm.matmsdk.transaction_report.TransactionStatusActivity"
+157-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:99:13-89
+158            android:screenOrientation="portrait" />
+158-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:100:13-49
+159        <activity
+159-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:101:9-113:20
+160            android:name="com.matm.matmsdk.MPOS.PosActivity"
+160-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:102:13-61
+161            android:label="MPOS"
+161-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:103:13-33
+162            android:noHistory="true" >
+162-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:104:13-37
+163
+164            <!--
+165                <intent-filter>
+166            <action android:name="android.intent.action.MAIN" />
+167
+168            <category android:name="android.intent.category.LAUNCHER" />
+169            </intent-filter>
+170            -->
+171        </activity>
+172        <activity
+172-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:114:9-118:47
+173            android:name="com.matm.matmsdk.Error.ErrorActivity"
+173-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:115:13-64
+174            android:label="@string/app_name"
+174-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:116:13-45
+175            android:screenOrientation="portrait"
+175-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:117:13-49
+176            android:theme="@style/AppTheme" />
+176-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:118:13-44
+177        <activity
+177-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:119:9-121:52
+178            android:name="com.matm.matmsdk.upitransaction.UPIHomeActivity"
+178-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:120:13-75
+179            android:screenOrientation="portrait" />
+179-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:121:13-49
+180        <activity
+180-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:122:9-124:52
+181            android:name="com.matm.matmsdk.aepsmodule.bankspinner.BankNameListActivity"
+181-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:123:13-88
+182            android:screenOrientation="portrait" />
+182-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:124:13-49
+183        <activity
+183-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:125:9-127:52
+184            android:name="com.matm.matmsdk.Error.Error2Activity"
+184-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:126:13-65
+185            android:screenOrientation="portrait" />
+185-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:127:13-49
+186        <activity
+186-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:128:9-130:52
+187            android:name="com.matm.matmsdk.aepsmodule.ministatement.StatementTransactionActivity"
+187-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:129:13-98
+188            android:screenOrientation="portrait" />
+188-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:130:13-49
+189        <activity
+189-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:131:9-133:52
+190            android:name="com.matm.matmsdk.MPOS.PosServiceActivity"
+190-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:132:13-68
+191            android:screenOrientation="portrait" />
+191-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:133:13-49
+192        <activity
+192-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:134:9-136:52
+193            android:name="com.matm.matmsdk.MPOS.BluetoothServiceActivity"
+193-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:135:13-74
+194            android:screenOrientation="portrait" />
+194-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:136:13-49
+195        <activity
+195-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:137:9-139:52
+196            android:name="com.matm.matmsdk.aepsmodule.transactionstatus.TransactionStatusAeps2Activity"
+196-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:138:13-104
+197            android:screenOrientation="portrait" />
+197-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:139:13-49
+198        <activity
+198-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:140:9-142:52
+199            android:name="com.matm.matmsdk.readfile.PreviewPDFActivity"
+199-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:141:13-72
+200            android:screenOrientation="portrait" />
+200-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:142:13-49
+201        <activity
+201-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:143:9-145:52
+202            android:name="com.matm.matmsdk.matm1.MatmActivity"
+202-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:144:13-63
+203            android:screenOrientation="portrait" />
+203-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:145:13-49
+204        <activity
+204-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:146:9-148:52
+205            android:name="com.matm.matmsdk.matm1.Matm1TransactionStatusActivity"
+205-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:147:13-81
+206            android:screenOrientation="portrait" />
+206-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:148:13-49
+207        <activity
+207-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:149:9-151:52
+208            android:name="com.matm.matmsdk.Error.ErrorMatm1Activity"
+208-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:150:13-69
+209            android:screenOrientation="portrait" />
+209-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:151:13-49
+210        <activity android:name="com.matm.matmsdk.bluetoothprinter.BluetoothDeviceList" />
+210-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:152:9-90
+210-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:152:19-87
+211        <activity
+211-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:153:9-155:52
+212            android:name="com.matm.matmsdk.Bluetooth.BluetoothConnectorActivity"
+212-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:154:13-81
+213            android:screenOrientation="portrait" />
+213-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:155:13-49
+214        <activity
+214-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:156:9-158:52
+215            android:name="com.matm.matmsdk.permission.PermissionsActivity"
+215-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:157:13-75
+216            android:screenOrientation="portrait" />
+216-->[:MATMSDK] D:\sdk_isu-master\MATMSDK\build\intermediates\library_manifest\debug\AndroidManifest.xml:158:13-49
+217        <!--
+218             FirebaseMessagingService performs security checks at runtime,
+219             but set to not exported to explicitly avoid allowing another app to call it.
+220        -->
+221        <service
+221-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:28:9-35:19
+222            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+222-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:29:13-82
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:30:13-43
+224            android:exported="false" >
+224-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\e182834db780caf4954b341e81ff9bff\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:31:13-37
+225            <intent-filter android:priority="-500" >
+225-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:57:13-59:29
+226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+226-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:58:17-78
+226-->D:\sdk_isu-master\app\src\main\AndroidManifest.xml:58:25-75
+227            </intent-filter>
+228        </service>
+229
+230        <receiver
+230-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:29:9-33:20
+231            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+231-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:30:13-85
+232            android:enabled="true"
+232-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:31:13-35
+233            android:exported="false" >
+233-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:32:13-37
+234        </receiver>
+235        <receiver
+235-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:34:9-42:20
+236            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+236-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:35:13-100
+237            android:enabled="true"
+237-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:36:13-35
+238            android:exported="true"
+238-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:37:13-36
+239            android:permission="android.permission.INSTALL_PACKAGES" >
+239-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:38:13-69
+240            <intent-filter>
+240-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:39:13-41:29
+241                <action android:name="com.android.vending.INSTALL_REFERRER" />
+241-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:40:17-79
+241-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:40:25-76
+242            </intent-filter>
+243        </receiver>
+244
+245        <service
+245-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:44:9-47:40
+246            android:name="com.google.android.gms.measurement.AppMeasurementService"
+246-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:45:13-84
+247            android:enabled="true"
+247-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:46:13-35
+248            android:exported="false" />
+248-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:47:13-37
+249        <service
+249-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:48:9-52:72
+250            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+250-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:49:13-87
+251            android:enabled="true"
+251-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:50:13-35
+252            android:exported="false"
+252-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:51:13-37
+253            android:permission="android.permission.BIND_JOB_SERVICE" />
+253-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f8a508e55178e286bf9607df960c94b2\jetified-firebase-analytics-16.3.0\AndroidManifest.xml:52:13-69
+254
+255        <receiver
+255-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:37:9-44:20
+256            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+256-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:38:13-78
+257            android:exported="true"
+257-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:39:13-36
+258            android:permission="com.google.android.c2dm.permission.SEND" >
+258-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:40:13-73
+259            <intent-filter>
+259-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:41:13-43:29
+260                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+260-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:17-81
+260-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa4e66de92601421c92722b4b962a867\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:25-78
+261            </intent-filter>
+262        </receiver>
+263
+264        <provider
+264-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+265            android:name="com.google.firebase.provider.FirebaseInitProvider"
+265-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+266            android:authorities="com.pax.pax_sdk_app.firebaseinitprovider"
+266-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+267            android:exported="false"
+267-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+268            android:initOrder="100" />
+268-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\23303e8a56a8b7181914e194f7eefe21\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+269
+270        <activity
+270-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+271            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+271-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+272            android:exported="false"
+272-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+273            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+273-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\7f1c05604811b5d8b0b39e85e23d9427\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+274
+275        <meta-data
+275-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+276            android:name="com.google.android.gms.version"
+276-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+277            android:value="@integer/google_play_services_version" />
+277-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\aa0b0b1b8ee658361451379d95ea2969\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+278
+279        <service
+279-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+280            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+280-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+281            android:exported="false" >
+281-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+282            <meta-data
+282-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+283                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+283-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+284                android:value="cct" />
+284-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\6d70683a4b40ba90445b6c92bba8ff34\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+285        </service>
+286        <service
+286-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+287            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+287-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+288            android:exported="false"
+288-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+289            android:permission="android.permission.BIND_JOB_SERVICE" >
+289-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+290        </service>
+291
+292        <receiver
+292-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+293            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+293-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+294            android:exported="false" />
+294-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\f0afc7e17011affdaac43f5f74abc6e1\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+295
+296        <provider
+296-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\30084a24de90d90e93e330949dcc7212\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+297            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+297-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\30084a24de90d90e93e330949dcc7212\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+298            android:authorities="com.pax.pax_sdk_app.lifecycle-process"
+298-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\30084a24de90d90e93e330949dcc7212\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+299            android:exported="false"
+299-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\30084a24de90d90e93e330949dcc7212\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+300            android:multiprocess="true" />
+300-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ISU-1068\.gradle\caches\transforms-2\files-2.1\30084a24de90d90e93e330949dcc7212\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+301    </application>
+302
+303</manifest>

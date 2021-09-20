@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/drawable/button_background.xml" value="0.25435897435897437" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/drawable/button_background_transaction_success.xml" value="0.25435897435897437" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/drawable/button_background_transaction_success_close.xml" value="0.25435897435897437" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/drawable/ic_home.xml" value="0.25435897435897437" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/drawable/ic_send.xml" value="0.25435897435897437" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_aeps_home.xml" value="0.213768115942029" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_demo.xml" value="0.2269021739130435" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_main.xml" value="0.2028985507246377" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_matm.xml" value="0.1" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_print.xml" value="0.16666666666666666" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_transaction_status.xml" value="0.16666666666666666" />
+        <entry key="..\:/sdk_isu-master/MATMSDK/src/main/res/layout/activity_transaction_status_aeps1.xml" value="0.2391102873030584" />
+        <entry key="..\:/sdk_isu-master/app/src/main/res/layout/activity_driver.xml" value="0.16666666666666666" />
+        <entry key="..\:/sdk_isu-master/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

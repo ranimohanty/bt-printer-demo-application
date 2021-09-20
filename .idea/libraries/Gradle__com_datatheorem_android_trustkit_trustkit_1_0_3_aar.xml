@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.datatheorem.android.trustkit:trustkit:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0b432e3ed18bd2d5240f90ead987837/jetified-trustkit-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0b432e3ed18bd2d5240f90ead987837/jetified-trustkit-1.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0b432e3ed18bd2d5240f90ead987837/jetified-trustkit-1.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.datatheorem.android.trustkit/trustkit/1.0.3/77bb655bca0f95668bf7cbb8c2b147ec7fd9ad5b/trustkit-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
